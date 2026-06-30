@@ -209,6 +209,26 @@ export default function ContactPage() {
             </Card>
           </motion.div>
         </div>
+
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={cardReveal}
+          className="mt-8 sm:mt-12 rounded-xl overflow-hidden border border-border/60 shadow-sm"
+        >
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3667.892206642503!2d82.1502122!3d22.0743408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a280b15fddf23b9%3A0xc52ef3fb4d5d9e23!2sManya%20Imaging%20and%20Diagnostic%20Point!5e0!3m2!1sen!2sin!4v1737470000000"
+            width="100%"
+            height="400"
+            style={{ border: 0 }}
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            title="Manya Dental Clinic Location"
+            className="rounded-xl"
+          />
+        </motion.div>
       </div>
     </div>
   )
